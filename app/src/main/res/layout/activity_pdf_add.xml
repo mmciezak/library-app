@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PdfAddActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:src="@drawable/back_icon"
+            android:layout_margin="10dp"
+            android:background="@color/transparentColor"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/icon"
+            android:src="@drawable/book_black_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="Add a new book"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/icon"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:id="@+id/attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/upload_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:background="@color/transparentColor"
+            android:padding="5dp"/>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/booktitle"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="30dp"
+        app:hintEnabled="false">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/booktitleInput"
+            android:drawableStart="@drawable/book_icon"
+            android:hint="Enter book title"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/mediumGray"
+            android:padding="10dp"
+            android:drawableTint="@color/mediumGray"/>
+
+        
+        
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/booktitle"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionInput"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/mediumGray"
+            android:hint="Enter book description"
+            android:drawableStart="@drawable/pen_icon"
+            android:drawableTint="@color/mediumGray"
+            android:drawablePadding="10dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/selectCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/category_icon"
+        android:drawableTint="@color/mediumGray"
+        android:drawablePadding="10dp"
+        android:drawableEnd="@drawable/arrow_down_icon"
+        android:padding="10dp"
+        android:hint="Select book category"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/mediumGray"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitButton"
+        android:layout_below="@id/selectCategory"
+        android:text="Upload"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Aquamentus_Green"/>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
